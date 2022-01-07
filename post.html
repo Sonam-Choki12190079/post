@@ -4,12 +4,15 @@
 <script>
 
 fetch('http://127.0.0.1:8000/api/books', {
-    method: "get",
+    method: "post",
     headers: {
         "Accept": "application/json",
         'X-Requested-With': 'XMLHttpRequest',
         "Content-Type": "application/json"
-    }
+    },
+   body: JSON.stringify({id: 19, title: 'warming', author: 'sjhdgc', isbn:'12334',publisher:'bhutan2022'})
+   // body: JSON.stringify({id: 19, title: 'content of life', author: 'wangmoo', isbn:'879797',publisher:'Bhutanes'})
+
 })
     .then(res => res.json())
     .then(data => console.log(data))

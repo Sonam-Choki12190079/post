@@ -1,1 +1,1 @@
-<?php include("fetchget.html"): ?>
+<?php include("post.html"): ?>
