@@ -1,1 +1,1 @@
-<?php include("post.html"): ?>
+<?php include("post.html"); ?>
